@@ -1,0 +1,1 @@
+export { default as agentRoutes } from './agent.routes.ts';
