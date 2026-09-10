@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "dev": "node --watch --conditions development src/app.ts",
+    "dev": "node --watch --conditions development --env-file=.env src/app.ts",
     "prebuild": "rm -rf dist",
     "build": "tsc",
     "prestart": "npm run build",
@@ -23,5 +23,10 @@
   "devDependencies": {
     "@types/node": "^24.13.3",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.17.0",
+    "openai": "^7.5.0",
+    "zod": "^4.4.3"
   }
 }
